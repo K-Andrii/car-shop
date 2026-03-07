@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000a18;
+    font-size: 1.1em;
+}
+
+body{
+    background-color: #ffac72;
+}
+
+img{
+    height: 64px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+q{
+    display: block;
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.return-ref{
+    display: block;
+    margin: 18px 8px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-style{
+    background-color: aliceblue;
+    padding: 18px;
+    border: 3px solid #ff3c41;
+}
+
+/*Header*/
+header{
+    padding: 18px;
+    margin: 18px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+/*main*/
+h1{
+    font-size: 48px;
+    margin: 52px;
+}
+
+.car-article{
+    margin: 32px 16px;
+}
+
+.header-of-article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-size: 1.4em;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 36px;
+}
