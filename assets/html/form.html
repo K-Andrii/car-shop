@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label> First Name:
+                    <input type="text" autofocus>
+                </label>
+                <label> Last Name:
+                    <input type="text">
+                </label>
+                <label>
+                    <input type="date">
+                </label>
+                <p>Gender</p>
+                <div class="ratio-container">
+                    <label>Male
+                        <input type="radio" name="gender" id="male" value="male">
+                    </label>
+                    <label>Female
+                        <input type="radio" name="gender" id="female" value="female">
+                    </label>
+                </div>
+                <label for="experience">Drive experience</label>
+                <select name="" id="experience">
+                    <option value="0-5">0-5 years</option>
+                    <option value="5-10">5-10 years</option>
+                    <option value="10+">10+ years</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Contacts</legend>
+                <label>Email
+                    <input type="email">
+                </label>
+                <label>Phone
+                    <input type="tel">
+                </label>
+                <label for="address-area">Address:</label>
+                <textarea name="address" id="address-area" cols="30" rows="8"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Car info</legend>
+                <label for="brand">Brand</label>
+                    <select name="brand" id="brand">
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                <label for="model">Model</label>
+                    <select name="model" id="model">
+                        <option value="mondeo">Mondeo</option>
+                        <option value="fiesta">Fiesta</option>
+                        <option value="rav">RAV</option>
+                        <option value="camry">Camry</option>
+                        <option value="x5">X5</option>
+                        <option value="i4">i4</option>
+                    </select>
+
+                <label>Used
+                    <input type="checkbox" name="used" checked>
+                </label>
+
+                <p>Color:</p>
+                <div class="ratio-container">
+                    <label>Red
+                        <input type="radio" name="color" id="red" value="red"></label>
+                    <label>Black
+                        <input type="radio" name="color" id="black" value="black"></label>
+                    <label>Blue
+                        <input type="radio" name="color" id="blue" value="blue"></label>
+                    <label>White
+                        <input type="radio" name="color" id="white" value="white"></label>
+                    <label>Grey
+                        <input type="radio" name="color" id="grey" value="grey"></label>
+                </div>
+
+                <label>Price
+                    <input type="range" name="price" id="price" min="1" max="10">
+                </label>
+            </fieldset>
+
+            <button type="reset">Cancel</button>
+            <button type="submit">Ok</button>
+
+            <div class="return-container"><a href="../../index.html" id="return-to-main-page">← Повернення на головну сторінку</a></div>
+        </form>
+    </main>
+</body>
+</html>
