@@ -6,92 +6,121 @@
     <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
-    <main>
-        <form action="#">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label> First Name:
-                    <input type="text" autofocus>
-                </label>
-                <label> Last Name:
-                    <input type="text">
-                </label>
-                <label>
-                    <input type="date">
-                </label>
-                <p>Gender</p>
-                <div class="ratio-container">
-                    <label>Male
-                        <input type="radio" name="gender" id="male" value="male">
-                    </label>
-                    <label>Female
-                        <input type="radio" name="gender" id="female" value="female">
-                    </label>
-                </div>
+<main>
+    <form action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" autofocus>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name">
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday">
+            </div>
+            <p>Gender</p>
+            <div class="radio-container">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <div class="form-group">
                 <label for="experience">Drive experience</label>
-                <select name="" id="experience">
-                    <option value="0-5">0-5 years</option>
-                    <option value="5-10">5-10 years</option>
-                    <option value="10+">10+ years</option>
+                <select name="experience" id="experience">
+                    <option value="expert">expert</option>
+                    <option value="more-than-10">more than 10</option>
+                    <option value="5-10">5-10</option>
+                    <option value="2-5">2-5</option>
+                    <option value="less-than-2">less than 2</option>
+                    <option value="beginner">beginner</option>
                 </select>
-            </fieldset>
-            <fieldset>
-                <legend>Contacts</legend>
-                <label>Email
-                    <input type="email">
-                </label>
-                <label>Phone
-                    <input type="tel">
-                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contacts</legend>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel">
+            </div>
+            <div class="form-group">
                 <label for="address-area">Address:</label>
                 <textarea name="address" id="address-area" cols="30" rows="8"></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Car info</legend>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Car info</legend>
+
+            <div class="form-group">
                 <label for="brand">Brand</label>
-                    <select name="brand" id="brand">
-                        <option value="ford">Ford</option>
-                        <option value="toyota">Toyota</option>
-                        <option value="bmw">BMW</option>
-                    </select>
+                <select name="brand" id="brand">
+                    <option value="ford">Ford</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="bmw">BMW</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="model">Model</label>
-                    <select name="model" id="model">
-                        <option value="mondeo">Mondeo</option>
-                        <option value="fiesta">Fiesta</option>
-                        <option value="rav">RAV</option>
-                        <option value="camry">Camry</option>
-                        <option value="x5">X5</option>
-                        <option value="i4">i4</option>
-                    </select>
+                <select name="model" id="model">
+                    <option value="mondeo">Mondeo</option>
+                    <option value="fiesta">Fiesta</option>
+                    <option value="rav">RAV</option>
+                    <option value="camry">Camry</option>
+                    <option value="x5">X5</option>
+                    <option value="i4">i4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="used">Used</label>
+                <input type="checkbox" name="used" id="used">
+            </div>
+            <p>Color:</p>
+            <div class="radio-container">
+                <label for="red">Red</label>
+                <input type="radio" name="color" id="red" value="red" checked>
+                <label for="black">Black</label>
+                <input type="radio" name="color" id="black" value="black">
+                <label for="blue">Blue</label>
+                <input type="radio" name="color" id="blue" value="blue">
+                <label for="white">White</label>
+                <input type="radio" name="color" id="white" value="white">
+                <label for="grey">Grey</label>
+                <input type="radio" name="color" id="grey" value="grey">
+            </div>
+            <div class="form-group price-container">
+                <label for="price">Price</label>
+                <input type="range" name="price" id="price" min="10" max="80" list="prices">
+                <datalist id="prices">
+                    <option value="10" label="10"></option>
+                    <option value="20" label="20"></option>
+                    <option value="30" label="30"></option>
+                    <option value="40" label="40"></option>
+                    <option value="50" label="50"></option>
+                    <option value="60" label="60"></option>
+                    <option value="70" label="70"></option>
+                    <option value="80" label="80"></option>
+                </datalist>
+            </div>
+        </fieldset>
 
-                <label>Used
-                    <input type="checkbox" name="used" checked>
-                </label>
+        <button type="reset">Cancel</button>
+        <button type="submit">Ok</button>
 
-                <p>Color:</p>
-                <div class="ratio-container">
-                    <label>Red
-                        <input type="radio" name="color" id="red" value="red"></label>
-                    <label>Black
-                        <input type="radio" name="color" id="black" value="black"></label>
-                    <label>Blue
-                        <input type="radio" name="color" id="blue" value="blue"></label>
-                    <label>White
-                        <input type="radio" name="color" id="white" value="white"></label>
-                    <label>Grey
-                        <input type="radio" name="color" id="grey" value="grey"></label>
-                </div>
-
-                <label>Price
-                    <input type="range" name="price" id="price" min="1" max="10">
-                </label>
-            </fieldset>
-
-            <button type="reset">Cancel</button>
-            <button type="submit">Ok</button>
-
-            <div class="return-container"><a href="../../index.html" id="return-to-main-page">← Повернення на головну сторінку</a></div>
-        </form>
-    </main>
+        <div class="return-container">
+            <a href="../../index.html" id="return-to-main-page">← Повернення на головну сторінку</a>
+        </div>
+    </form>
+</main>
 </body>
 </html>
